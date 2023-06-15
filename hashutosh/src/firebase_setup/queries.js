@@ -7,7 +7,7 @@ import {
     doc,
     setDoc,
   } from "firebase/firestore";
-  import { db } from "./setup";
+  import { db } from "./firebase";
   
   export const allDocuments = (collectionName) => {
     return getDocs(collection(db, collectionName));
